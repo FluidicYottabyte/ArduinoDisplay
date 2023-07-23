@@ -55,7 +55,7 @@ int32_t              width  = 160, // BMP image dimensions
 
 
 void setup(void) {
-
+  pinMode(SD_CS, OUTPUT);
   ImageReturnCode stat; // Status from image-reading functions
 
   Serial.begin(9600);
